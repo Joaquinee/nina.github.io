@@ -1,0 +1,66 @@
+Meta ajouter
+
+Changement h1.name en h1 simple (Changement dans le css .top-header .name en h1)
+Changement des librairier Bootstrap en chargeant les min.js
+Deplacement des script en bas du body
+
+
+
+<div id="header"> ne sert a rien suppresion et ajout de la nav et du code compris dedans dans la balise header
+<div id="nav"> en <nav>
+
+
+
+Dans les images de l'header ajout de loading="lazy" pour retarder le chargement des images
+Optimisation des image avec un rezise par w max & changement en webp
++ add Lazy sur element
+Def(retarder le chargement des images en dehors de la vue de l'utilisateur)
+
+div.about changement en section, plus adéquat qu'une div
+ => Correction img manque alt
+ Modification HTML synstaxe h1 & h6 en h2 & h3
+
+ (Question ? une autre image nécessaire ?)
+
+div.gallery en section pareil
+display none ? inutile
+
+Changement text des filtrer de blanc  noir parce que plis visible pour tt le monde
+
+
+Toutes les  images on etais revue
+
+
+Pour les filtre 
+$(".active-tag").removeClass("active active-tag");
+$(this).addClass("active-tag");
+
+Pour la modal
+
+Bien definir l'index 
+
+Prev()
+index = index === 0 ? imagesCollection.length - 1 : index - 1;
+Next()
+index = index === imagesCollection.length - 1 ? 0 : index + 1;
+
+====> 
+$(".active-tag").removeClass("active active-tag");
+$(this).addClass("active active-tag");
+
+
+
+
+
+
+
+
+
+
+
+
+minify scripts.js > scripts.min.js 
+minify style.css > style.min.css  
+minify maugallery.js > maugallery.min.js
+
+
