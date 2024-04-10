@@ -49,10 +49,7 @@ $(".active-tag").removeClass("active active-tag");
 $(this).addClass("active active-tag");
 
 
-
-
-
-
+//Minify
 
 minify scripts.js > scripts.min.js 
 minify style.css > style.min.css  
