@@ -286,8 +286,8 @@ input[type="submit"] {
 
 	}
 	 .picture img {
-        width: 400px;
-        height: 400px
+        width: 300px;
+        height: 300px;
     }
 	.picture.left::before {
 		width: 100%;
@@ -371,8 +371,8 @@ input[type="submit"] {
 		width: 100%;
 	}
 	.picture img {
-		width: 300px;
-		height: 300px;
+		width: 200px;
+		height: 200px;
 	}
 }
 
