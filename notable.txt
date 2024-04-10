@@ -54,11 +54,6 @@ $(this).addClass("active active-tag");
 
 
 
-
-
-
-
-
 minify scripts.js > scripts.min.js 
 minify style.css > style.min.css  
 minify maugallery.js > maugallery.min.js
