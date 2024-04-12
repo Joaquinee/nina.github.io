@@ -11,8 +11,10 @@ body {
 
 
 /* Ajouts */
+
 .carousel-item img {
-    height: auto
+	max-width: 1920px;
+	height: auto;
 }
 
 

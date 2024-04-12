@@ -12,4 +12,8 @@ $(document).ready(function() {
         showTags: true,
         tagsPosition: 'top'
     });
+
+    $('.carousel').carousel({
+        interval: 10000
+    });
 });
