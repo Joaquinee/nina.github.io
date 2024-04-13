@@ -133,6 +133,12 @@ body {
 	margin-bottom: 0 !important;
 	padding: 0;
 }
+
+.modal-body {
+	padding: 15% !important;
+  }
+
+
 .item-column::after{
 	content: "";
 	display: block;

@@ -12,13 +12,16 @@
         );
       }
       $.fn.mauGallery.listeners(options);
+
+
       $(this)
-        .children(".gallery-item")
+        .find(".gallery-item")
         .each(function(index) { 
           $.fn.mauGallery.methods.responsiveImageItem($(this));
           $.fn.mauGallery.methods.moveItemInRowWrapper($(this));
           $.fn.mauGallery.methods.wrapItemInColumn($(this), options.columns);
           var theTag = $(this).data("gallery-tag");
+         
           if (
             options.showTags &&
             theTag !== undefined &&
@@ -27,9 +30,10 @@
             tagsCollection.push(theTag);
           }
         });
-
+        
       if (options.showTags) {
         $.fn.mauGallery.methods.showItemTags(
+
           $(this),
           options.tagsPosition,
           tagsCollection
@@ -66,14 +70,18 @@
   };
   $.fn.mauGallery.methods = {
     createRowWrapper(element) {
+
+      
       if (
+        
         !element
           .children()
           .first()
           .hasClass("row")
+         
       ) {
         element.append('<div class="gallery-items-row row"></div>');
-      }
+      } 
     },
     wrapItemInColumn(element, columns) {
       if (columns.constructor === Number) {
@@ -114,6 +122,7 @@
     },
     openLightBox(element, lightboxId) {
       
+      console.log(element.attr("src"))
       $(`#${lightboxId}`)
         .find(".lightboxImage")
         .attr("src", element.attr("src"));
@@ -212,7 +221,7 @@
                                 ? '<div class="mg-prev" style="cursor:pointer;position:absolute;top:50%;left:-15px;background:white;"><</div>'
                                 : '<span style="display:none;" />'
                             }
-                            <img class="lightboxImage img-fluid" alt="Contenu de l'image affichée dans la modale au clique"/>
+                            <img class="lightboxImage img-fluid" alt="Contenu de l'image affichée dans la modale au clique" src=""/>
                             ${
                               navigation
                                 ? '<div class="mg-next" style="cursor:pointer;position:absolute;top:50%;right:-15px;background:white;}">></div>'

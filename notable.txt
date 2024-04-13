@@ -48,6 +48,11 @@ index = index === imagesCollection.length - 1 ? 0 : index + 1;
 $(".active-tag").removeClass("active active-tag");
 $(this).addClass("active active-tag");
 
+ $(this)
+    .find(".gallery-item")
+Pour mettre des picture
+
+
 
 //Minify
 
