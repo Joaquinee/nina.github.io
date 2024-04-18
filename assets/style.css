@@ -12,17 +12,6 @@ body {
 
 /* Ajouts */
 
-.carousel-item img {
-	max-width: 1920px;
-	height: auto;
-}
-
-
-
-
-
-
-
 .top-header {
 	background-color: white;
 	position: sticky;

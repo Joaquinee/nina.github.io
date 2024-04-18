@@ -121,8 +121,6 @@
       }
     },
     openLightBox(element, lightboxId) {
-      
-      console.log(element.attr("src"))
       $(`#${lightboxId}`)
         .find(".lightboxImage")
         .attr("src", element.attr("src"));
@@ -136,7 +134,6 @@
         }
       });
       let activeTag = $(".tags-bar span.active-tag").data("images-toggle");
-      console.log(activeTag)
       let imagesCollection = [];
       if (activeTag === "all") {
         $(".item-column").each(function() {
